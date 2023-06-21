@@ -38,7 +38,7 @@ export const ProductCard = ({product, cart, setCart, cartItem, setCartItem}) => 
     else {
       setIsInCart(false);
     }
-  }, [cartList])
+  }, [cartList, product.id])
 
   return (
     <div className="productCard">

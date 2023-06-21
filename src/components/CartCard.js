@@ -4,7 +4,7 @@ import { useCart } from '../context/CartContext';
 
 export const CartCard = ({product, cart, setCart, qty}) => {
   const { removeFromCart, removeOneFromCart, cartList } = useCart();
-  const {id, name, price, image} = product;
+  const {id} = product;
 
   const handleQty = (id) => {
     if (parseInt(document.getElementById("selected-"+id).value) === 0) {
